@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFFFFF;
+}
+#nav{
+    height: 128.39px;
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: lightblue; */
+}
+#nav img {
+/* padding-left: 5%; */
+
+
+
+}
+#logo {
+    align-items: center;
+    margin-top: 15px;
+    height: 94.95px;
+width: 250px;
+    margin-left: 20px;
+    display: block;
+    justify-content: center;
+}
+#icons{
+    /* height: 85px;
+    width: 800;
+    background-color: greenyellow; */
+}
+#logo-right {
+    height: 55.31px;
+    width: 425;
+    margin-left: 360px;
+    margin-top: 10px;
+    /* max-width: 100%; */
+    display: block;
+}
+
+
+.navbar-nav{
+    display: flex;
+    gap: 11px;
+    margin-top: 20px;
+
+}
+.nav-item a{
+    font-weight: 450;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito Sans',sans-serif;
+}
+.line{
+    height: 15px;
+    margin-top: 3px;
+    width: 1px;
+    background-color: black;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+    
+}
+#page1 img{
+    /* height: 600px; */
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+#float{
+    background-color: #531F75;
+    z-index: 99;
+    position: relative;
+    height: 45vh;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+    margin-top: -87px;
+}
