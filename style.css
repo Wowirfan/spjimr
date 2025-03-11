@@ -132,8 +132,8 @@ width: 250px;
     border: none;
     height: 5vh;
 }
-#name input{
-    width: 45%;
+#email input{
+    width: %;
     border-radius: 5px;
     background-color: #FFFFFF;
     border: none;
