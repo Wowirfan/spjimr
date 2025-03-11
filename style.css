@@ -121,6 +121,6 @@ width: 250px;
 #name input{
     width: 45%;
     border-radius: 5px;
-    #FFFFFF
+    background-color: #FFFFFF;
     height: 4.5vh;
 }
