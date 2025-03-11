@@ -181,7 +181,7 @@ button {
     cursor: pointer;
 }
 /* Mobile Responsive Styling */
-@media (max-width: 768px) {
+@media (max-width: 890px) {
     /* Navbar */
     #nav {
         flex-direction: column;
