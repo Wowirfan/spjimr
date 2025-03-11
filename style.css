@@ -108,4 +108,5 @@ width: 250px;
 }
 #name input{
     background-color: azure;
+    z-index: 999;
 }
