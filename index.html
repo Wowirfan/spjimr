@@ -47,10 +47,33 @@
                     <input type="text"></input>
                 </div>
                 <div id="number">
-                    <label for="country">Choose Your Country: </label>
-                    <select name="country" id="country">
-                        <option value="IND">India(+91)</option>
-                    </select>
+                    <label for="country">Country Code:</label>
+<select id="country" name="country" onchange="updateCode()">
+    <option value="+93">Afghanistan (+93)</option>
+    <option value="+355">Albania (+355)</option>
+    <option value="+213">Algeria (+213)</option>
+    <option value="+61">Australia (+61)</option>
+    <option value="+91" selected>India (+91)</option>  <!-- India Default -->
+    <option value="+92">Pakistan (+92)</option>
+    <option value="+880">Bangladesh (+880)</option>
+    <option value="+977">Nepal (+977)</option>
+    <option value="+1">United States (+1)</option>
+    <option value="+44">United Kingdom (+44)</option>
+</select>
+
+<script>
+function updateCode() {
+    let dropdown = document.getElementById("country");
+    let selectedText = dropdown.options[dropdown.selectedIndex].text;
+    let selectedValue = dropdown.value;
+
+    // Sirf country code set karne ke liye innerHTML update karo
+    dropdown.options[dropdown.selectedIndex].innerHTML = selectedValue;
+    
+    // 1 second ke baad wapas pura naam show karne ke liye
+    
+}
+</script>
                 </div>
             </div>
         </div>
