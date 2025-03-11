@@ -144,3 +144,39 @@ width: 250px;
     border: none;
     height: 5vh;
 }
+
+
+.captcha-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+#captcha-box {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 40%;
+    text-align: center;
+}
+
+#captcha-input {
+    padding: 8px;
+    font-size: 16px;
+    width: 50%;
+}
+
+button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
