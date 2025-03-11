@@ -112,7 +112,8 @@ width: 250px;
     display: flex;
     background-color: azure;
     z-index: 9995;
-    al
+    align-items: center;
+    justify-content: center;
 }
 #name input{
     width: 45%;
