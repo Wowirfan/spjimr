@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now for PGDM At SPJIMR</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAANlBMVEVHcEzsfiHsfiHsfiHsfiHsfiHsfiHsfiHsfiHsfiHsfiHsfiHsfiHsfiHsfiHsfiHsfiHsfiFZPsg3AAAAEnRSTlMAplkj2/9sTucwP30Lyhe8+IyP5IuZAAAAx0lEQVR4AXXQQQIEERAEwYQCGvz/s3sfNo4AyR/O80+IStxSBrIkzyXLQ5JK5RKkRpccNyvqdKnzMORIj+vChK6IlzJfq1K1rb7mqipFjf36wogcHZY67d7YpgpJjrSvkpGlOhXx+k6acpVjaDZdUdNmiCRv+w4+TlBCi6HDx9R0BSfrj6i+ID+VpgoXd7JwhaFQ7U63jik3Jfbko9mep1AiS4Evi2yfFZIct9o20aHBSz5B5rbxYubcVOMPF9ziH0OTv+zw9QPH2Acc2FZt8gAAAABJRU5ErkJggg==">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body> 
+    <button id="applybuttonmain">Apply</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+    // Button Jab Page Load Ho Tab Neeche Se Aaye
+    gsap.from("#applybuttonmain", {
+        y: 100, /* Neeche se aayega */
+        opacity: 0,
+        duration: 1.5,
+        ease: "power4.out"
+    });
+
+    // GSAP Timeline for Drop & Bounce Effect
+    function startBounce() {
+        let tl = gsap.timeline({ repeat: -1, repeatDelay: 1.3 }); // Har 2 sec ke baad repeat hoga
+        
+        tl.to("#applybuttonmain", { 
+            y: -17, /* Pehle upar jayega */
+            duration: 0.8, 
+            ease: "power1.out" 
+        }) 
+        .to("#applybuttonmain", { 
+            y: 3, /* Neeche girayega */
+            duration: 0.9, 
+            ease: "bounce.out" /* Neeche girne par bounce effect */
+        });
+    }
+
+    startBounce(); // Bounce Animation Start Karo
+</script>
+
+
+
+    <div id="nav">   
+        <img id="logo" src="https://www.spjimr.org/pgdm-admissions/images/logo.svg" alt="">
+        <div id="icons">
+            <img id="logo-right" src="https://www.spjimr.org/pgdm-admissions/images/naac-top-logo.svg" alt="">
+            <div class="navbar-nav">
+                <div class="nav-item"><a href="#">About SPJIMR</a></div>
+                <div class="line"></div>
+                <div class="nav-item"><a href="#">Programmes Offered</a></div>
+                <div class="line"></div>
+                <div class="nav-item"><a href="#">Why SPJIMR</a></div>
+                <div class="line"></div>
+                <div class="nav-item"><a href="#">Placements</a></div>
+                <div class="line"></div>
+                <div class="nav-item"><a href="#">Admission Process</a></div>
+                <div class="line"></div>
+                <div class="nav-item"><a href="#">Life @ SPJIMR</a></div>
+                <div class="line"></div>
+                <div class="nav-item"><a href="#">Notable Alumni</a></div>
+                <div class="line"></div>
+                <div class="nav-item"><a href="#">FAQs</a></div>
+            </div>
+        </div>
+        <div id="navmenu">
+            <i id="menuBtn" class="ri-menu-line">
+                
+            </i></div>
+
+    </div>
+    
+    <div id="main">
+        
+        <div id="page1">
+            <div id="pg1bnrimg">
+                <img src="https://www.spjimr.org/pgdm-admissions/images/banner.jpg" alt="Banner Image ">
+            </div>
+            <div id="float">
+                <div id="float-left">
+                    <div id="float-header">
+                        <h2 class="animate animated">Nurturing</h2>
+                        <div id="float-headerh2">
+                            <h2 class="animate animated">Next-Gen</h2>
+                        </div>
+                    </div>
+                    <div id="float-body">
+                        <h2 class="animate animated">Global Business
+                            leader</h2>
+                    </div>
+                
+                </div>
+                <div id="vrline"></div>
+                <div id="float-right">
+                    <h4 class="animate animated">Admissions Open 2025-2027</h4>
+                    <div id="float-button">
+                        <div id="leftbtn" class="animate animated"><h1>PGDM</h1></div>
+                        <div id="rightbtn" class="animate animated"><h1>PGDM(BM)</h1></div>
+                    </div>
+                    <div id="applytxt" class="animate animated">
+                        2-year full-time residential programme
+                    </div>
+                    <div id="sprline" class="animate animated"></div>
+                    <div id="applastdt" class="animate animated"><h4>Last Date To Apply</h4></div>
+                    <div id="appdate" class="animate animated"><h4>November 22, 2024</h4></div>
+
+                </div>
+            </div>
+            <div id="form">
+                <h1 class="animate animated">enquire now</h1>
+                <div id="name">
+                    <input id="frm" type="text" placeholder="    First Name *"></input>
+                    <input type="text" placeholder="   Second Name *"></input>
+                </div>
+                <div id="email">
+                    <input id="frm" type="text" placeholder="    Enter Email Address *" ></input>
+                </div>
+                <div id="number">
+                    <label for="country"></label>
+                    <select id="country frm" name="country" onchange="updateCode()">
+                        <option value="AF">Afghanistan (+93)</option>
+                        <option value="AL">Albania (+355)</option>
+                        <option value="DZ">Algeria (+213)</option>
+                        <option value="AS">American Samoa (+1)</option>
+                        <option value="AD">Andorra (+376)</option>
+                        <option value="AO">Angola (+244)</option>
+                        <option value="AR">Argentina (+54)</option>
+                        <option value="AM">Armenia (+374)</option>
+                        <option value="AU">Australia (+61)</option>
+                        <option value="AT">Austria (+43)</option>
+                        <option value="AZ">Azerbaijan (+994)</option>
+                        <option value="BH">Bahrain (+973)</option>
+                        <option value="BD">Bangladesh (+880)</option>
+                        <option value="BY">Belarus (+375)</option>
+                        <option value="BE">Belgium (+32)</option>
+                        <option value="BZ">Belize (+501)</option>
+                        <option value="BJ">Benin (+229)</option>
+                        <option value="BT">Bhutan (+975)</option>
+                        <option value="BO">Bolivia (+591)</option>
+                        <option value="BA">Bosnia and Herzegovina (+387)</option>
+                        <option value="BR">Brazil (+55)</option>
+                        <option value="BG">Bulgaria (+359)</option>
+                        <option value="KH">Cambodia (+855)</option>
+                        <option value="CM">Cameroon (+237)</option>
+                        <option value="CA">Canada (+1)</option>
+                        <option value="CN">China (+86)</option>
+                        <option value="CO">Colombia (+57)</option>
+                        <option value="HR">Croatia (+385)</option>
+                        <option value="CU">Cuba (+53)</option>
+                        <option value="CY">Cyprus (+357)</option>
+                        <option value="CZ">Czech Republic (+420)</option>
+                        <option value="DK">Denmark (+45)</option>
+                        <option value="EG">Egypt (+20)</option>
+                        <option value="FI">Finland (+358)</option>
+                        <option value="FR">France (+33)</option>
+                        <option value="DE">Germany (+49)</option>
+                        <option value="GR">Greece (+30)</option>
+                        <option value="IN" selected>India (+91)</option> <!-- India Default -->
+                        <option value="ID">Indonesia (+62)</option>
+                        <option value="IR">Iran (+98)</option>
+                        <option value="IQ">Iraq (+964)</option>
+                        <option value="IE">Ireland (+353)</option>
+                        <option value="IT">Italy (+39)</option>
+                        <option value="JP">Japan (+81)</option>
+                        <option value="JO">Jordan (+962)</option>
+                        <option value="KZ">Kazakhstan (+7)</option>
+                        <option value="KE">Kenya (+254)</option>
+                        <option value="KW">Kuwait (+965)</option>
+                        <option value="MY">Malaysia (+60)</option>
+                        <option value="MV">Maldives (+960)</option>
+                        <option value="MX">Mexico (+52)</option>
+                        <option value="MA">Morocco (+212)</option>
+                        <option value="NP">Nepal (+977)</option>
+                        <option value="NL">Netherlands (+31)</option>
+                        <option value="NZ">New Zealand (+64)</option>
+                        <option value="NG">Nigeria (+234)</option>
+                        <option value="KP">North Korea (+850)</option>
+                        <option value="NO">Norway (+47)</option>
+                        <option value="PK">Pakistan (+92)</option>
+                        <option value="PH">Philippines (+63)</option>
+                        <option value="PL">Poland (+48)</option>
+                        <option value="PT">Portugal (+351)</option>
+                        <option value="QA">Qatar (+974)</option>
+                        <option value="RO">Romania (+40)</option>
+                        <option value="RU">Russia (+7)</option>
+                        <option value="SA">Saudi Arabia (+966)</option>
+                        <option value="SG">Singapore (+65)</option>
+                        <option value="ZA">South Africa (+27)</option>
+                        <option value="KR">South Korea (+82)</option>
+                        <option value="ES">Spain (+34)</option>
+                        <option value="SE">Sweden (+46)</option>
+                        <option value="CH">Switzerland (+41)</option>
+                        <option value="TH">Thailand (+66)</option>
+                        <option value="TR">Turkey (+90)</option>
+                        <option value="UA">Ukraine (+380)</option>
+                        <option value="AE">United Arab Emirates (+971)</option>
+                        <option value="GB">United Kingdom (+44)</option>
+                        <option value="US">United States (+1)</option>
+                        <option value="VN">Vietnam (+84)</option>
+                        <option value="YE">Yemen (+967)</option>
+                    </select>
+                   
+                    
+                    <input type="tel" placeholder="      Enter Mobile Number *">
+                </div>
+                <div id="statencity">
+                    <label for="state"></label>
+                    <select id="state" onchange="updateCities()">
+                        <option value="">Select State *</option>
+                        <option value="JammuKashmir">Jammu & Kashmir</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                    </select>
+                
+                    <label for="city"></label>
+                    <select id="city">
+                        <option value="">Select City *</option>
+                    </select>
+                </div>
+                <div class="captcha-container">
+                    <div id="captcha-box"></div> <!-- Captcha Left -->
+                    <input type="text" id="captcha-input" placeholder="Enter Captcha"> <!-- Input Right -->
+                </div>
+                <div id="check">
+                    <input type="checkbox">
+                    I agree to receive information from SPJIMR
+                <!-- <h6>I agree to receive information</h6> -->
+                </div>
+                
+                <button onclick="validateCaptcha()">Submit</button> <!-- Button Below -->
+            
+                <p id="message"></p>
+            
+                
+                        </div>
+            </div>
+            <div id="top-rank">
+                <div class="animate animated" id="toprkheader">Join the Top-Ranked PGDM</div>
+                <div class="animate animated" id="bodytxt">Journey at SPJIMR!</div>
+            </div>
+            <div id="valueofcompany">
+                <div class="animate animated" id="noone"><h2>#1</h2><h5>#1 Business School in India (Financial Times MiM 2024 Ranking)</h5></div>
+                <div class="animate animated"  id="valueline"></div>
+                <div class="animate animated"  id="noone"><h2>43</h2><h5>Years of Legacy</h5></div>
+                <div class="animate animated"   class="animate animated" id="valueline"></div>
+                <div class="animate animated"  id="noone"><h2>INR 81 LPA</h2><h5>Highest Salary</h5></div>
+                <div class="animate animated"  id="valueline"></div>
+                <div class="animate animated"  id="noone"><h2>72 +</h2><h5>Companies</h5></div>
+            </div>
+        </div>
+        <div id="page2">
+            <div class="animate animated"  id="page2hdr"><h1>About SPJIMR</h1>
+            <h3 class="animate animated" >Top Business School in India</h3></div>
+            <div  class="animate animated" id="imgntxt">
+                <div  class="animate animated" id="sqimg"><div id="qcircle"></div><div id="sqr"></div><div id="pg2img">
+                    <img src="https://www.spjimr.org/pgdm-admissions/images/about-Thumb.webp" alt=""></div></div>
+                <div class="animate animated"  id="pg2text"><p>
+                    S P. Jain Institute of Management and Research (SPJIMR) was inaugurated in 1981 by the British Prime Minister, the Late Hon. Margaret Thatcher. SPJIMR is a prestigious business school located in the heart of Mumbai and is acknowledged as a responsible member of the Bhartiya Vidya Bhavan.
+                </p>
+                    <br>
+                    <p>
+                    It is known for the thousands of accomplished and sensitized participants it has sent out into the world for over 43 years—participants who are committed to making a difference. As a self-reliant institution, SPJIMR seeks operational freedom and encourages an entrepreneurial, agile, and flexible organizational culture by influencing practice and promoting value-based growth</p></div>
+            </div>
+        </div>
+        <div id="page3">
+            <div id="why">
+
+                <div id="whyhdr"><h1>Why SPJIMR</h1></div>
+
+                <div id="whylt">
+                    <div id="whyleft">
+                       <div id="whyli"> <div id="ang"><p>&gt;</p></div>
+                       <div id="whypg"><p>#1 Business School in India ( Financial Times MiM 2024 Ranking)</p></div></div>
+                        <div id="whyline"></div>
+                        <div id="whyli"> <div id="ang"><p>&gt;</p></div>
+                       <div id="whypg"><p>Accredited by AACSB, AMBA, NBA, Approved by AICTE</p></div></div>
+                        <div id="whyline"></div>
+                        <div id="whyli"> <div id="ang"><p>&gt;</p></div>
+                       <div id="whypg"><p>International Exposure: Global Fast Track (GFT), International Exchange (INTEX)</p></div></div>
+                        <div id="whyline"></div>
+                        <div id="whyli"> <div id="ang"><p>&gt;</p></div>
+                       <div id="whypg"><p>Non-classroom learning initiatives such as Abhyudaya, the Personal Growth Lab, and Development of Corporate Citizenship (DOCC)</p></div></div>
+                        <!-- <div id="whyline"></div> -->
+                    </div>
+                <div id="whyright">
+                    <div id="whyli"> <div id="ang"><p>&gt;</p></div>
+                    <div id="whypg"><p>Industry exposure through Summer internships with reputed companies</p></div></div>
+                     <div id="whyline"></div>
+                     <div id="whyli"> <div id="ang"><p>&gt;</p></div>
+                     <div id="whypg"><p>Student-faculty connect and diverse peer learning</p></div></div>
+                      <div id="whyline"></div>
+                      <div id="whyli"> <div id="ang"><p>&gt;</p></div>
+                      <div id="whypg"><p>Proven track record of 100% placements</p></div></div>
+                       <div id="whyline"></div>
+                       <div id="whyli"> <div id="ang"><p>&gt;</p></div>
+                       <div id="whypg"><p>Leading large scale flagship events: OJAS (Management Festival), SPrint (Sports Festival)</p></div></div>
+                        <!-- <div  id="whyline"></div> -->
+                </div></div>
+            </div>
+            <div id="pg3hdr"><h1> Programmes Offered</h1></div>
+            <div id="pg3main">
+                
+                    <div class="animate animated pg3txt"  id="pg2text"><h2 id="pg3txthdr">Post Graduate Diploma in
+                        Management (PGDM)</h2><p>
+                            The PGDM curriculum aims to strengthen fundamentals in all areas of functional management and is customised for students and industry requirements. The programme offers Specialisation in Finance, Information Management, Marketing and Operations & Supply Chain.</p>
+                        <br>
+                        <div id="pg3svg">
+                            <div id="batchsvg"><div id="svgbg"><svg class="svgpg3" id="Icon_ionic-ios-timer2" data-name="Icon ionic-ios-timer" xmlns="http://www.w3.org/2000/svg" width="38.983" height="38.993" viewBox="0 0 38.983 38.993">
+                                <path id="Path_9191" data-name="Path 919" d="M23.434,42.931A19.5,19.5,0,0,1,9.9,9.4a1.565,1.565,0,0,1,2.174,2.252,16.362,16.362,0,1,0,12.917-4.5v6.1a1.569,1.569,0,1,1-3.139,0V5.507a1.568,1.568,0,0,1,1.569-1.569,19.5,19.5,0,0,1,.01,38.993Z" transform="translate(-3.938 -3.938)" fill="#f36a19"></path>
+                                <path id="Path_9201" data-name="Path 920" d="M12.8,11.435l9.7,6.97a2.935,2.935,0,0,1-3.412,4.777A2.834,2.834,0,0,1,18.4,22.5l-6.97-9.7A.978.978,0,0,1,12.8,11.435Z" transform="translate(-1.111 -1.111)" fill="#f36a19"></path>
+                              </svg></div>
+                              <div id="svgtext">
+                                    <h3>Duration</h3>
+                                    <p>2 Years</p>
+                                    </div></div>
+                              <div id="svgntext"><div id="svgbg2"><svg class="svgpg3" xmlns="http://www.w3.org/2000/svg" width="40.243" height="26.153" viewBox="0 0 40.243 26.153">
+                                <g id="Icon_ionic-ios-people1" data-name="Icon ionic-ios-people" transform="translate(-2.215 -7.748)">
+                                  <path id="Path_9211" data-name="Path 921" d="M29.039,27.87c-1-.359-2.644-.376-3.37-.654a4.761,4.761,0,0,1-1.56-.726,9.636,9.636,0,0,1-.26-2.554,4.126,4.126,0,0,0,.887-1.255,13.945,13.945,0,0,0,.43-2.465s.592.251.825-.932c.2-1.022.574-1.56.475-2.312s-.52-.574-.52-.574.52-.762.52-3.352c0-2.671-2.017-5.3-5.79-5.3s-5.8,2.635-5.8,5.3c0,2.59.511,3.352.511,3.352s-.421-.179-.52.574.269,1.291.475,2.312c.233,1.192.825.932.825.932a14.08,14.08,0,0,0,.43,2.465,4.126,4.126,0,0,0,.887,1.255,9.637,9.637,0,0,1-.26,2.554,4.582,4.582,0,0,1-1.56.717c-.717.278-2.357.314-3.37.672a6.325,6.325,0,0,0-4.1,6.023H33.135A6.313,6.313,0,0,0,29.039,27.87Z" transform="translate(1.642)" fill="#f36a19"></path>
+                                  <path id="Path_9221" data-name="Path 922" d="M11.939,22.555a6.085,6.085,0,0,0,2.994-.834c-1.389-2.106-.636-4.562-.923-6.856a3.781,3.781,0,0,0-4.186-3.657H9.788a3.793,3.793,0,0,0-4.15,3.657c-.287,2.285.511,5.019-.914,6.856.851.771,3,.744,3,.744h0a4.539,4.539,0,0,1-.09,1.506,2.263,2.263,0,0,1-1.076.493,20.8,20.8,0,0,0-2.321.645,3.774,3.774,0,0,0-2.026,3.334h7.2a6.439,6.439,0,0,1,2.868-2.671,6.019,6.019,0,0,1,2.214-.466s.341-.538-.78-.744a7.64,7.64,0,0,1-1.721-.6C11.823,23.765,11.939,22.555,11.939,22.555Z" transform="translate(0 0.95)" fill="#f36a19"></path>
+                                  <path id="Path_9231" data-name="Path 923" d="M26.8,22.555a6.085,6.085,0,0,1-2.994-.834c1.389-2.106.636-4.562.923-6.856a3.781,3.781,0,0,1,4.186-3.657h.036a3.793,3.793,0,0,1,4.15,3.657c.287,2.285-.511,5.019.914,6.856-.851.771-3,.744-3,.744h0a4.539,4.539,0,0,0,.09,1.506,2.263,2.263,0,0,0,1.076.493,20.8,20.8,0,0,1,2.321.645,3.774,3.774,0,0,1,2.026,3.334h-7.2a6.439,6.439,0,0,0-2.868-2.671,6.019,6.019,0,0,0-2.214-.466s-.341-.538.78-.744a7.64,7.64,0,0,0,1.721-.6C26.918,23.765,26.8,22.555,26.8,22.555Z" transform="translate(5.932 0.95)" fill="#f36a19"></path>
+                                </g>
+                              </svg>
+                            </div>
+                            <div id="svgtext">
+                                <h3>Batch Size</h3>
+                                <p>240</p>
+                                </div></div>
+                        </div>
+                       <div id="svg3npg">
+                        <div id="svgbg3">
+                            <svg class="svgpg3" xmlns="http://www.w3.org/2000/svg" width="34.377" height="32.758" viewBox="0 0 34.377 32.758">
+                                <path id="Icon_material-work1" data-name="Icon material-work" d="M32.139,9.475H25.664V6.238A3.227,3.227,0,0,0,22.426,3H15.951a3.227,3.227,0,0,0-3.238,3.238V9.475H6.238a3.213,3.213,0,0,0-3.222,3.238L3,30.521a3.227,3.227,0,0,0,3.238,3.238h25.9a3.227,3.227,0,0,0,3.238-3.238V12.713A3.227,3.227,0,0,0,32.139,9.475Zm-9.713,0H15.951V6.238h6.475Z" transform="translate(-2 -2)" fill="none" stroke="#f36a19" stroke-width="2"></path>
+                              </svg>
+                           </div>
+                           <div class="svgtxt" id="svgtext">
+                            <h3>Immersive Experiences</h3>
+                            <p>International Exposure-Global Fast Track (GFT),
+    
+                                International Exchange (INTEX),
+                                
+                                Non-Classroom Learnings, Summer Internships</p>
+                            </div>
+                       </div>
+                       <div id="applybutton">apply now</div>
+                    </div>
+                        <div  class="animate animated" id="sqimg"><div id="qcircle3"></div><div id="sqr3"></div><div id="pg3img">
+                            <img src="https://www.spjimr.org/pgdm-admissions/images/programmes-Thumb.webp" alt=""></div></div>
+            </div>
+        </div>
+        <div id="page4"></div>
+        <div id="page5"></div>
+        <div id="page6"></div>
+        <div id="page7"></div>
+    </div>  
+        
+<script src="script.js"></script>
+</body>
+</html>
